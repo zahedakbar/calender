@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  box-shadow: 1px 1px 10px 0 red greenyellow yellow blanchedalmond -3px -3px
+    10px white;
+  z-index: 3;
+}
+header h1 {
+  font-size: 75px;
+  text-align: center;
+  background-color: transparent;
+}
+h1:hover {
+  background-color: rgb(62, 190, 190);
+}
+body {
+  text-transform: uppercase;
+  background-color: rgb(115, 126, 126);
+}
+
+.calender {
+  display: flex;
+  margin: 15vh auto;
+  width: 95%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.sep-calender {
+  box-shadow: 1px 1px 10px 0 red greenyellow yellow blanchedalmond -3px -3px
+    10px 0 white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.sep-calender h1 {
+  text-align: center;
+  padding: 1rem;
+}
+.sep-calender ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+}
+li {
+  padding: 5px;
+  text-align: center;
+}
+
+li:nth-child(7n + 1) {
+  color: rgba(253, 7, 7, 0.993);
+}
+li:nth-child(7n-1) {
+  color: rgb(12, 240, 43);
+}
+
+.prev-month,
+.prev-month ~ li {
+  opacity: 0.5;
+}
+.fast-day,
+.fast-day ~ li {
+  opacity: 1 !important;
+  font-weight: 900;
+}
+.last-day ~ li {
+  opacity: 0.5 !important;
+  font-weight: 200;
+}
+#eid {
+  color: rgb(245, 66, 35);
+  background-color: rgb(18, 50, 233);
+  border-radius: 10%;
+}
+#valenTineday {
+  color: rgb(26, 36, 33);
+  background-color: yellow;
+  border-radius: 10%;
+}
+li:hover {
+  background-color: rgb(21, 98, 185);
+}
+#happyBirthday {
+  color: rgb(29, 219, 162);
+  background-color: rgb(23, 233, 222);
+  border-radius: 10%;
+}
